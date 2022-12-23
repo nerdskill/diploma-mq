@@ -2,9 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Diploma MQ</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -18,19 +19,19 @@
         <li class="menu-list-item">
           <a class="menu-link" href="#0">Главная</a>
         </li>
-        <li class="menu-list-item">
+        <li class="menu-list-item menu-list-item-margin">
           <a class="menu-link" href="#0">Посты</a>
         </li>
-        <li class="menu-list-item">
+        <li class="menu-list-item menu-list-item-margin">
           <a class="menu-link" href="#0">Статьи</a>
         </li>
-        <li class="menu-list-item">
+        <li class="menu-list-item menu-list-item-margin">
           <a class="menu-link" href="#0">Теги</a>
         </li>
-        <li class="menu-list-item">
+        <li class="menu-list-item menu-list-item-margin">
           <a class="menu-link" href="#0">Темы</a>
         </li>
-        <li class="menu-list-item">
+        <li class="menu-list-item menu-list-item-margin">
           <a class="menu-link" href="#0">Контакты</a>
         </li>
         <li class="menu-list-item menu-list-item-margin">
@@ -50,11 +51,11 @@
 <span class="shadow"></span>
 <div class="popup">
   <div class="popup-title">
-    <h2 class="popup_head">Ваш фидбек</h2>
+    <h2 class="popup-head">Ваш фидбек</h2>
         <span class="underline"></span>
   </div>
-    <div class="popup_quiz">
-      <span class="popup_question">Как часто вы заходите на сайт?</span>
+    <div class="popup-quiz">
+      <span class="popup-question">Как часто вы заходите на сайт?</span>
       <select class="popup-select">
         <option selected>Почти каждый день</option>
         <option>Раз в несколько дней</option>
@@ -84,7 +85,6 @@
 
 <section class="trends">
   <h2 class="heading">Сейчас в тренде</h2>
-  <div class="underline"></div>
   <div class="container">
       <div class="trend-box">
         <div class="box box-product1">
@@ -260,7 +260,7 @@
         <form class="search">
           <label class="search-group">
               <span class="visually-hidden">Поле для поиска по сайту. Введите интересующие вас слова или теги.</span>
-            <input class="field" name="query" placeholder="Найти..." required>
+            <input class="search-field" name="query" placeholder="Найти..." required>
           </label>
           <button class="button">
               <span class="visually-hidden">Кнопка для запуска поискового запроса</span></button>
@@ -277,7 +277,7 @@
         </form>
       </section>
         <section class="tags">
-          <h2 class="caption">Теги</h2>
+          <h2 class="caption caption-margin">Теги</h2>
           <ul class="tags-block">
             <li class="tags-block-item">
               <a class="tags-block-link" href="#0">Fashion</a>
@@ -306,7 +306,7 @@
           </ul>
     </section>
       <section class="topics">
-        <h2 class="caption">Темы</h2>
+        <h2 class="caption caption-margin">Темы</h2>
         <ul class="categories-list">
           <li class="categories-list-item">
             <a class="item-link" href="#0">Красота</a>
@@ -340,60 +340,59 @@
 
 <section class="production">
   <h2 class="heading">Наши изделия</h2>
-  <div class="underline"></div>
   <article class="product-container">
     <div class="product-box">
       <div class="product-card">
         <picture class="product-img">
-          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="/images/shop-item-tablet1.jpg">
-          <source media="(max-width: 640px)" srcset="/images/shop-item-mobile1.jpg">
-          <img class="production-img" src="/images/shop-item-desk1.jpg" alt="подушки для дивана">
+          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+          <img class="production-img" src="images/shop-item-desk1.jpg" alt="подушки для дивана">
         </picture>
         <div class="product-info">
-          <h2 class="product-title"><a class="product-link" href="#0">Подушки на диван</a></h2>
-          <p class="product-article">Набор из двдух подушек с модными принтами. Видео о создании<a class="product-link" href="#0">здесь</a></p>
+          <h2 class="product-title"><a class="product__link" href="#0">Подушки на диван</a></h2>
+          <p class="product-article">Набор из двдух подушек с модными принтами. Видео о создании<a class="product-link" href="#0"> здесь</a>.</p>
           <div class="product-prices">
             <div class="product-group">
           <h3 class="product-price">1000₽</h3>
           <h3 class="product-price-new">800₽</h3>
             </div>
-            <button class="product-price-buttoon">в магазин</button>
+            <button class="product-price-button">в магазин</button>
           </div>
         </div>
       </div>
       <div class="product-card product-card-margin">
         <picture class="product-img">
-          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="/images/shop-item-tablet2.jpg">
-          <source media="(max-width: 640px)" srcset="/images/shop-item-mobile2.jpg">
-          <img class="production-img" src="/images/shop-item-desk2.jpg" alt="Кролик">
+          <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
+          <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+          <img class="production-img" src="images/shop-item-desk2.jpg" alt="Кролик">
         </picture>
           <div class="product-info">
-            <h2 class="product-title"><a class="product-link" href="#0">Кукла «Зайчик»</a></h2>
+            <h2 class="product-title"><a class="product__link" href="#0">Кукла «Зайчик»</a></h2>
             <p class="product-article">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="product-link" href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
             <div class="product-prices">
               <div class="product-group">
             <h3 class="product-price"></h3>
             <h3 class="product-price-new">3500₽</h3>
               </div>
-              <button class="product-price-buttoon">в магазин</button>
+              <button class="product-price-button">в магазин</button>
             </div>
           </div>
         </div>
         <div class="product-card product-card-margin">
           <picture class="product-img">
-            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="/images/shop-item-tablet3.jpg">
-            <source media="(max-width: 640px)" srcset="/images/shop-item-mobile3.jpg">
+            <source media="(min-width: 641px) and (max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
+            <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
             <img class="production-img" src="images/shop-item-desk3.jpg" alt="шестигранник">
           </picture>
         <div class="product-info">
-          <h2 class="product-title"><a class="product-link" href="#0">Шестиугольная рамка</a></h2>
-          <p class="product-article">Необычная рамка для украшения дома из видео<a class="product-link" href="#0">«Как сделать рамку из подручных средств за 30 минут»</a></p>
+          <h2 class="product-title"><a class="product__link" href="#0">Шестиугольная рамка</a></h2>
+          <p class="product-article">Необычная рамка для украшения дома из видео<a class="product-link" href="#0"> «Как сделать рамку из подручных средств за 30 минут»</a>.</p>
           <div class="product-prices">
             <div class="product-group">
           <h3 class="product-price">500₽</h3>
           <h3 class="product-price-new">400₽</h3>
             </div>
-            <button class="product-price-buttoon">в магазин</button>
+            <button class="product-price-button">в магазин</button>
           </div>
         </div>
       </div>
