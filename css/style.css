@@ -147,21 +147,6 @@ body {
   z-index: 3;
 }
 
-/*.underline {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0 0 20px;
-}
-
-.underline::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 66px;
-  background-color: #e1d9bd;
-  margin: 10px auto 0;
-}*/
-
 .popup-head {
   font-size: 20px;
   line-height: 29px;
@@ -171,13 +156,22 @@ body {
   text-transform: uppercase;
   margin-bottom: 14px;
   margin-top: 10px;
-  font-family: "open-sans-b";
+  font-family: open-sans-b;
+}
+
+.popup-head::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 66px;
+  background-color: #e1d9bd;
+  margin: 10px auto 0;
 }
 
 .popup-question {
   line-height: 40px;
   font-weight: 400;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
   color: #000000;
   font-size: 15px;
 }
@@ -192,12 +186,12 @@ body {
   font-size: 13px;
   color: #828383;
   font-weight: 400;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
   margin-top: 12px;
   padding-left: 19px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("../svg/form-arrows.svg");
+  background-image: url(../svg/form-arrows.svg);
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 3%;
@@ -207,12 +201,12 @@ body {
   margin-top: 30px;
 }
 
-.popup-mail {
+.popup-mailing {
   display:inline-block;
   margin-top: 34px;
 }
 
-.popup-mail-title {
+.popup-mailing-title {
   margin-right: 80px;
 }
 
@@ -221,7 +215,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url("../svg/form-empty-circle.svg");
+  background-image: url(../svg/form-empty-circle.svg);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 20px;
@@ -241,7 +235,7 @@ body {
 }
 
 .radio:checked ~ .popup-radio-text::before {
-  background-image: url("../svg/form-circle.svg");
+  background-image: url(../svg/form-circle.svg);
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 20px;
@@ -275,17 +269,18 @@ body {
   line-height: 40px;
   color: #ffffff;
   font-weight: 700;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
   text-transform: uppercase;
   margin-top: 26px;
   cursor: pointer;
 }
+
 .popup-button:hover {
   border: 1px solid #b0a78c;
 }
 
 .popup-close {
-  background-image: url("../svg/form-x.svg");
+  background-image: url(../svg/form-x.svg);
   position: absolute;
   width: 20px;
   height: 20px;
@@ -293,7 +288,7 @@ body {
   right: 0px;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
 }
 
@@ -487,7 +482,7 @@ body {
   line-height: 40px;
   color: #888888;
   font-weight: 400;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
 }
 
 .author {
@@ -495,7 +490,7 @@ body {
   line-height: 40px;
   color: #000000;
   font-weight: 700;
-  font-family: "open-sans-b";
+  font-family: open-sans-b;
 }
 
 .article-description {
@@ -503,7 +498,7 @@ body {
   line-height: 22px;
   color: #0f0d0e;
   font-weight: 400;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
   margin: 0;
 }
 
@@ -529,7 +524,7 @@ body {
   font-size: 14px;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "open-sans-b";
+  font-family: open-sans-b;
   text-transform: uppercase;
   text-align: center; 
   margin-block-start: 0;
@@ -576,14 +571,14 @@ body {
   font-size: 12px;
   color: #989898;
   font-weight: 400;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
 }
 
 .post-link {
   font-size: 14px;
   line-height: 1px;
   color: #000000;
-  font-family: "open-sans-b";
+  font-family: open-sans-b;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -654,7 +649,7 @@ body {
   line-height: 40px;
   color: #ffffff;
   font-weight: 700;
-  font-family: "open-sans-b";
+  font-family: open-sans-b;
   background: #b59f5b;
   border: none;
   text-transform: uppercase;
@@ -794,7 +789,7 @@ body {
   line-height: 24px;
   color: #0f0d0e;
   font-weight: 700;
-  font-family: "open-sans-b";
+  font-family: open-sans-b;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -809,7 +804,7 @@ body {
   line-height: 22px;
   color: #0f0d0e;
   font-weight: 400;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
   margin: 0;
 }
 
@@ -840,7 +835,7 @@ body {
   line-height: 40px;
   color: #ffffff;
   font-weight: 700;
-  font-family: "open-sans-r";
+  font-family: open-sans-r;
   cursor: pointer;
 }
 
@@ -1025,7 +1020,7 @@ body {
 
 @media (max-width: 640px) {
   .header {
-    background-image: url("../images/banner-mobile.jpg");
+    background-image: url(../images/banner-mobile.jpg);
     background-size: cover;
   }
 
